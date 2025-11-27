@@ -9,7 +9,6 @@
 header {
   position: relative;
   display: flex;
-  max-height: 900px;
   justify-content: center;
   align-items: center;
   padding: 50px;
@@ -28,7 +27,7 @@ div.background {
   clip-path: polygon(
     0 0,
     100% 0,
-    100% 80%,
+    100% 50%,
     /* raise bottom-right corner */ 0 100%
   );
 }
@@ -57,14 +56,24 @@ div.about-me-container {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
 }
 
 div.about-me-container > p {
   color: #6d6b6a;
 }
 
-h2 {
+.about-me-container > h2 {
   font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+
+main > h2 {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  left: 40px;
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 .icon-container {
@@ -78,6 +87,92 @@ h2 {
 }
 
 .icon-container i:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   cursor: pointer;
+}
+
+main {
+  padding: 50px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+
+.placeholder,
+.project-details {
+  max-width: 530px;
+}
+
+.project {
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+  transition: transform 0.5s;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.placeholder {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.placeholder.red {
+  background-color: #9e1c1c;
+}
+
+.placeholder.violet {
+  background-color: #7c75ca;
+}
+
+.placeholder.green {
+  background-color: #5e8f4d;
+}
+
+.placeholder.pink {
+  background-color: #c363b4;
+}
+
+.placeholder.orange {
+  background-color: #d88f39;
+}
+
+.placeholder.blue {
+  background-color: #4ba2d2;
+}
+
+.project-details p {
+  font-family: "Roboto", sans-serif;
+}
+.project-details div {
+  font-family: "Playfair Display", serif;
+}
+
+.project-details h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: 100;
+}
+
+.project-details h3 span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.project-details p {
+  padding: 0 1rem 3rem;
+  color: #8a8988;
 }
