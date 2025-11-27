@@ -72,3 +72,12 @@ h2 {
   gap: 16px;
   justify-content: flex-end;
 }
+
+.icon-container i {
+  transition: transform 0.5s;
+}
+
+.icon-container i:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
