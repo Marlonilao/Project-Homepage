@@ -193,20 +193,12 @@
           Random Town, California 12345
         </p>
         <p>
-          <img
-            src="assets/phone-outline.svg"
-            alt="phone-icon"
-            width="16px"
-            height="16px"
-          />555-55555-55555
+          <img src="assets/phone-outline.svg" alt="phone-icon" />
+          555-55555-55555
         </p>
         <p>
-          <img
-            src="assets/email-outline.svg"
-            alt="email-icon"
-            width="16px"
-            height="16px"
-          />ashleywilliams.is.not.real@gmail.com
+          <img src="assets/email-outline.svg" alt="email-icon" />
+          ashleywilliams.is.not.real@gmail.com
         </p>
         <div class="icon-container">
           <i class="devicon-github-original colored"></i>
@@ -214,7 +206,20 @@
           <i class="devicon-twitter-original colored"></i>
         </div>
       </div>
-      <div class="another-img-container"></div>
+      <img
+        srcset="
+          assets/contactPhoto.jpg        800w,
+          assets/contactPhoto-tablet.jpg 596w,
+          assets/contactPhoto-mobile.jpg 480w
+        "
+        sizes="
+        (min-width: 769px) 800px,
+        (min-width: 481px) 596px,
+        (max-width: 480px) 480px
+        "
+        src="assets/contactPhoto-mobile.jpg"
+        alt=""
+      />
     </footer>
   </body>
 </html>
