@@ -32,17 +32,15 @@ div.background {
   );
 }
 
-div.img-container {
+div.wrapper {
   position: relative;
 }
 
 h1 {
-  position: absolute;
   font-size: 100px;
   color: #ffffff;
   font-family: "Playfair Display", serif;
-  bottom: 50px;
-  left: 155px;
+  font-weight: 100;
 }
 
 div.about-me-container {
@@ -98,7 +96,6 @@ main {
 .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   gap: 2rem;
 }
