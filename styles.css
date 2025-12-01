@@ -206,3 +206,14 @@ p:has(img) {
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 1000px) and (min-width: 601px) {
+  header {
+    display: block;
+  }
+
+  .wrapper {
+    float: left;
+    margin: 0 20px 20px 0;
+  }
+}
