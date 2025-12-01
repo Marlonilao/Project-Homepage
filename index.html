@@ -13,10 +13,21 @@
   </head>
   <body>
     <header>
-      <picture>
-        <source media="(min-width: 1001px)" srcset="assets/profilePhoto.jpg" />
-        <img src="assets/profilePhoto-mobile.jpg" alt="" />
-      </picture>
+      <div class="background"></div>
+      <div class="wrapper">
+        <picture>
+          <source
+            media="(min-width: 1001px)"
+            srcset="assets/profilePhoto.jpg"
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="assets/profilePhoto-tablet.jpg"
+          />
+          <img src="assets/profilePhoto-mobile.jpg" alt="" />
+        </picture>
+        <h1>Ashley Williams</h1>
+      </div>
       <div class="about-me-container">
         <h2>About me</h2>
         <p>
